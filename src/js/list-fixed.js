@@ -6,7 +6,7 @@
     div.style.display = 'none';
     //生成img
     let img = document.createElement('img');
-    img.src = './img/miyaerwei.png';
+    img.src = '../img/miyaerwei.png';
     div.appendChild(img);
     document.body.appendChild(div);
  
@@ -39,7 +39,7 @@
     // let all1 = document.querySelector('.all1');
     let all2 = document.querySelectorAll('.all2');
     let all20 = document.querySelector('.all20');
-    
+    // console.log(all20)
     for(let i=0;i<all2.length;i++){
         
         all2[i].onmouseover = function(){
@@ -62,4 +62,5 @@
             this.style.backgroundColor= '#ccc';
         }
     }
+    
 })()

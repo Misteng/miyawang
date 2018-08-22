@@ -1,35 +1,4 @@
-(function(){
-    // let status = [200,304]
 
-    // let xhr = new XMLHttpRequest();
-    // // 处理数据
-    // xhr.onload = function(){
-    //     if(status.indexOf(xhr.status) >=0){
-    //         // console.log(xhr.responseText);
-    //         let data = JSON.parse(xhr.responseText);
-
-    //         console.log(data)
-
-    //         // 生成html结构ul>li
-    //         // let ul = document.createElement('ul');
-    //         // ul.innerHTML = data.map(item=>{
-    //         //     return `<li data-id="${item.id}">
-    //         //         <h4>${item.username}</h4>
-    //         //         <div class="content">${item.content}</div>
-    //         //         <span class="like">${item.likecnt}</span>
-    //         //         <span class="comment">${item.comtcnt}</span>
-    //         //     </li>`
-    //         // }).join('');
-
-    //         // 写入页面
-    //         // datalist.appendChild(ul);
-    //     }
-    // }
-
-    // xhr.open('get','../api/index.php',true);
-    // xhr.send();  
-      
-})();
 jQuery($=>{
     $.ajax({
         url:'../api/index.php',

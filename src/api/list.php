@@ -4,7 +4,7 @@
    
     
     //编写sql语句 
-    $sql = 'select * from goods';
+    $sql = 'select * from goods order by newprice asc';
 
     //获取查询结果集
     $result = $conn->query($sql);
