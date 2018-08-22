@@ -1,0 +1,9 @@
+#过滤某个具体文件
+#过滤所有mtk文件夹
+node_modules/
+#过滤所有.zip文件
+*.zip 
+#过滤视频
+.exe
+.wmv
+.mp4
