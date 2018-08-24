@@ -1,14 +1,14 @@
 jQuery($=>{
 
-    let all = document.querySelector('.all');
-    // console.log(all);
-    let all1 = document.querySelector('.all1');
-    all.onmouseover = function(){
-        all1.style.display = 'block';
-    }
-    all.onmouseout = function(){
-        all1.style.display = 'none';
-    }
+    // let all = document.querySelector('.all');
+    // // console.log(all);
+    // let all1 = document.querySelector('.all1');
+    // all.onmouseover = function(){
+    //     all1.style.display = 'block';
+    // }
+    // all.onmouseout = function(){
+    //     all1.style.display = 'none';
+    // }
     //请求数据
     $.ajax({
         url:'../api/index.php',
@@ -139,4 +139,4 @@ jQuery($=>{
             $('.option')[0].classList.remove('msg');
         }
     }
-})
+});

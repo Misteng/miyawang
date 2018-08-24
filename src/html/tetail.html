@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>蜜芽网列表页</title>
+    <title>蜜芽网详情页</title>
     <link rel="stylesheet" href="../lib/bootstrap-3.3.7-dist/css/bootstrap.css">
     <link rel="stylesheet" href="../css/base.css">
-    <link rel="stylesheet" href="../css/list.css">
+    <link rel="stylesheet" href="../lib/jquery-lxzoom/jquery.lxzoom.css">
+    <link rel="stylesheet" href="../css/tetail.css">
     <script src="../js/jquery-3.2.1.js"></script>
     <script src="../js/common.js"></script> 
     
@@ -202,50 +203,68 @@
                 </ul>
             </div>
         </div>
-        <div id="mylist">
-            <div class="container">
-                <ul class="option">
-                    <li>
-                        <span class="opt1"">优惠活动：</span>
-                        <a href="" class="opt2">直降</a>
-                        <a href="">慢200减40</a>
-                        <a href="">拼团</a>
-                    </li>
-                    <li>
-                        <span class="opt1"">品牌：</span>
-                        <a href="" class="opt2">可瑞康 Karicare</a>
-                        <a href="">荷兰原装 佳贝艾特K</a>
-                        <a href="">新西兰原装a2</a>
-                    </li>
-                    <li>
-                        <span class="opt1"">包装方式：</span>
-                        <a href="" class="opt2">盒装</a>
-                        <a href="">箱装</a>
-                        <a href="">袋装</a>
-                    </li>
-                    <li>
-                        <span class="opt1"">价格：</span>
-                        <a href="" class="opt2">30-280</a>
-                        <a href="">280-560</a>
-                        <a href="">560-1999</a>
-                    </li>
-                </ul>
-                <ul class="rank">
-                    <li class="rank1">人气</li>
-                    <li class="rank1">销量</li>
-                    <li class="rank1 ranktime"></li>
-                    <li class="rank1 rankprice"></li>
-                    <li class="rank2"><input type="text" placeholder="￥"> - <input type="text" placeholder="￥"></li>
-                    <li class="rank3">
-                        <input type="checkbox">只显示有货
-                        <span>共计个商品</span>
-                    </li>
-                </ul>
-                <ul class="listone">
-                    
-                </ul>
-            </div>
-        </div>
+       <div id="tetail">
+           <div class="container">
+               <div class="tetail1">
+                   <a href="../index.html">蜜芽首页</a>
+                   >
+                   <a href="./list.html">太阳镜</a>
+                   >
+                   <span class="tetail11"></span>
+               </div>
+               <div class="tetail2">
+                   <div class="tetailL fl">
+                       <div class="tetaillL1 goods"><img  data-big="../img2/a1.jpg"></div>
+                       <ul class="tetaillL2 small">
+                           <li></li>
+                           <li></li>
+                           <li></li>
+                           <li></li>
+                           <li></li>
+                       </ul>
+                   </div>
+                   <ul class="tetailR fr">
+                       <li class="tetailRname"></li>
+                       <li class="tetailRmiaoshu"></li>
+                       <li class="tetailRprice">
+                           <span>售价</span>
+                           <span class="newprice"></span>
+                           <span>￥<del class="overprice">200.00</del></span>
+                       </li>
+                       <li class="tetailRxuanze">
+                           <span>可选</span><span class="xuanze1"></span>
+                       </li>
+                       <li class="tetailRchicun">
+                           <span>规格</span><span>常规</span>
+                       </li>
+                       <li class="tetailRshuliang">
+                           <span>数量</span>
+                           <div class="zijia"><span>-</span><em></em><span>+</span></div>
+                           
+                       </li>
+                       <li class="tetailRpingfen">
+                           <span>评分</span>
+                           <img src="../img/5xingpingfen.png"/> 
+                           <span>100位蜜粉推荐</span>
+                       </li>
+                       <li class="tetailRbtn">
+                           <button class="btn1">加入购物车</button><button class="btn2"><i class="glyphicon glyphicon-heart"></i><br>收藏</button>
+                       </li>
+                       <li class="tetailRbianma">
+                           <span class="bianma"></span>
+                           <span class="tetailRbianma1"></span>
+                       </li>
+                       <li class="tetailRfahuo">
+                           <p>此商品由戴维贝拉官方旗舰店发货</p>
+                           <p>非自营 <i></i>  支持7天无理由退货</p>
+                       </li>
+                   </ul>
+               </div>
+               <div class="tetail3">
+                   <img src="../img/xaingqingtiaowen.png">
+               </div>
+           </div>
+       </div>
         <div id="bottom">
             <div class="container">
                 <div class="btm1">
@@ -359,8 +378,11 @@
         </ul>
     </div>
     <!-- <span></span> -->
-    <script src="../js/list.js"></script>
+    
+    <script src="../lib/jquery-lxzoom/jquery.lxzoom.js"></script>
+    <script src="../js/tetail.js"></script>
+    
+    <script src="../js/terail-big.js"></script>
     <script src="../js/list-fixed.js"></script>
-    <script src="../js/list-chuandi.js"></script>
 </body>
 </html>

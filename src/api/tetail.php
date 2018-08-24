@@ -2,9 +2,9 @@
     // 引入connect.php
     include 'connect.php';
    
-    
+    $id = isset($_GET['id']) ? $_GET['id'] : '';
     //编写sql语句 
-    $sql = 'select * from goods';
+    $sql = "select * from goods where id='$id'";
 
     //获取查询结果集
     $result = $conn->query($sql);
@@ -13,7 +13,7 @@
     //得到json字符串
     $row = $result->fetch_all(MYSQLI_ASSOC);
 
-    //释放查询结果集，避免资源浪费 
+    //释放查询结果集，避免资源浪费
     $result->close();
     // print_r ($row);
     //把结果输出到前台JSON_UNESCAPED_UNICODE

@@ -62,5 +62,12 @@
             this.style.backgroundColor= '#ccc';
         }
     }
+    //
+    $('.all')[0].onmouseover = function(){
+        $('.all1')[0].style.display = 'block';
+    }
+    $('.all')[0].onmouseout = function(){
+        $('.all1')[0].style.display = 'none';
+    }
     
 })()
