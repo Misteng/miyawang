@@ -4,9 +4,9 @@ jQuery($=>{
         url:'../api/index.php',
         dataType:'json',
         success:function(data){
-            console.log(data);
+        //     console.log(data);
             let arr = data.slice(0,10);
-            console.log(arr);
+        //     console.log(arr);
             $('.recommend1')[0].innerHTML = arr.map(item=>{
                 return `<li data-id=${item.id}>
                         <img src="./img2/${item.imgurl}">
@@ -127,5 +127,32 @@ jQuery($=>{
             }).join('');
         }
     });
-    //生成二维码固定定位
+    //点击li传参
+    let recommend1 = document.querySelector('.recommend1');
+//     let listli = recommend1.children;
+//     console.log(listli);
+    recommend1.onclick = function(e){
+        if(e.target.className == 'LI'){
+            let id = e.target.getAttribute('data-id');
+            location.href = './html/tetail.html?' + id;
+        }
+        if(e.target.tagName == 'IMG' || e.target.tagName == 'SPAN' || e.target.tagName == 'P'){
+            let id = e.target.parentNode.getAttribute('data-id');
+            location.href = './html/tetail.html?' + id;
+        }
+    }
+    //大牌列表
+    let eveyDa = document.querySelector('.eveyDa');
+//     let listli = eveyDa.children;
+//     console.log(listli);
+    eveyDa.onclick = function(e){
+        if(e.target.className == 'LI'){
+            let id = e.target.getAttribute('data-id');
+            location.href = './html/tetail.html?' + id;
+        }
+        if(e.target.tagName == 'IMG' || e.target.tagName == 'SPAN' || e.target.tagName == 'DEL'){
+            let id = e.target.parentNode.getAttribute('data-id');
+            location.href = './html/tetail.html?' + id;
+        }
+    }
 })

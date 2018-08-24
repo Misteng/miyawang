@@ -1,15 +1,15 @@
 jQuery($=>{
     //接收location的数据
-    console.log(666);
+    
     let id = decodeURI(location.search.slice(1));
-    console.log(id);
+    
     $.ajax({
         url:'../api/tetail.php?id='+ id,
         dataType:'json',
         success:function(data){
             
            let obj = data[0];
-           console.log(obj)
+           
            $('.tetail11')[0].innerHTML = obj.name;
            $('.tetailRname')[0].innerHTML = obj.name;
            $('.tetailRmiaoshu')[0].innerHTML = obj.describe;
@@ -47,7 +47,7 @@ jQuery($=>{
 		// 添加特定样式
 		$small.addClass('lx-zoom');
 		// 获取小图
-        var $smallImg = $(this).children('img');console.log($smallImg);
+        var $smallImg = $(this).children('img');
         // 大图与小图的比例
         var ratio;
         var $big = $('<div/>').addClass('lx-bigzoom').appendTo('body');
@@ -87,7 +87,7 @@ jQuery($=>{
 
 
             // 获取大图url
-            var bigUrl = $smallImg.attr('data-big');console.log($smallImg);
+            var bigUrl = $smallImg.attr('data-big');
             /*
                 大图相关
              */
