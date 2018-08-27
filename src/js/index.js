@@ -142,10 +142,10 @@ jQuery($=>{
         }
     }
     //大牌列表
-    let eveyDa = document.querySelector('.eveyDa');
-//     let listli = eveyDa.children;
-//     console.log(listli);
-    eveyDa.onclick = function(e){
+    let temai2 = document.querySelector('.temai2');
+//     let listli = temail2.children;
+    console.log(temai2);
+    temai2.onclick = function(e){
         if(e.target.className == 'LI'){
             let id = e.target.getAttribute('data-id');
             location.href = './html/tetail.html?' + id;

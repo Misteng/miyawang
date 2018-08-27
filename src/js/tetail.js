@@ -15,15 +15,95 @@ jQuery($=>{
            $('.tetailRmiaoshu')[0].innerHTML = obj.describe;
            $('.newprice')[0].innerHTML = '￥'+obj.newprice;
            $('.overprice')[0].innerHTML = obj.overprice;
-           $('<img/>').attr('src',`../img2/${obj.imgurl}`).appendTo($('.xuanze1'));
+        //    $('<img/>').attr('src',`../img2/${obj.imgurl}`).appendTo($('.xuanze1'));
+            $('.xuanze1 img')[0].src= `../img2/${obj.imgurl}`;
            $('.bianma')[0].innerHTML = '编码：'+obj.coding;
         //    $('<img/>').attr('src',`../img2/${obj.imgurl}`).attr('data-big',`../img2/${obj.imgurl}`).appendTo($('.tetaillL1'));
         // $('.tetaillL1')[0].src = '';
            $('.tetaillL1 img')[0].src= `../img2/${obj.imgurl}`; $('.tetaillL1 img')[0].dataset.big = `../img2/${obj.imgurl}`;
            $('<img/>').attr('src',`../img2/${obj.imgurl}`).attr('data-big',`../img2/${obj.imgurl}`).appendTo($('.tetaillL2 li'));
+
+           $('.tetail41 img')[0].src=`../img2/${obj.imgurl}`;
+           $('.tetail41 p')[0].innerHTML = obj.name;
+           $('.tetail41 span')[0].innerHTML = '￥'+obj.newprice;
+           $('.tetail42 img')[0].src=`../img2/${obj.imgurl}`;
+           $('.tetail42 p')[0].innerHTML = obj.name;
+           $('.tetail42 span')[0].innerHTML = '￥'+obj.newprice;
+           $('.tetail43 img')[0].src=`../img2/${obj.imgurl}`;
+           $('.tetail43 p')[0].innerHTML = obj.name;
+           $('.tetail43 span')[0].innerHTML = '￥'+obj.newprice;
+           $('.tetail44 img')[0].src=`../img2/${obj.imgurl}`;
+           $('.tetail44 p')[0].innerHTML = obj.name;
+           $('.tetail44 span')[0].innerHTML = '￥'+obj.newprice;
+           $('.tetail45 img')[0].src=`../img2/${obj.imgurl}`;
+           $('.tetail45 p')[0].innerHTML = obj.name;
+           $('.tetail45 span')[0].innerHTML = '￥'+obj.newprice;
+           $('.tetail46 img')[0].src=`../img2/${obj.imgurl}`;
+           $('.tetail46 p')[0].innerHTML = obj.name;
+           $('.tetail46 span')[0].innerHTML = '￥'+obj.newprice;
+
+            //存入cookie
+    var goods = document.querySelector('.tetailR');
+
+    // 声明一个变量，用于存放所有添加的商品信息
+    var goodslist = Cookie.get('goodslist');//'[{},{}..]' 或 ''
+
+    if(goodslist === ''){
+        goodslist = []
+    }else{
+        goodslist = JSON.parse(goodslist);//goodslist必须为json字符串
+    }
+
+    goods.onclick = function(e){
+        // Event对象兼容
+        e = e || window.event;
+        // 事件源对象兼容
+        var target = e.target || e.srcElement;
+        // 判断是否点击了添加购物车按钮
+        if(target.className === 'btn1'){
+
+            var currentGoods = goodslist.filter(function(g){
+                return g.id === id;
+            });//[{}]或[]
+
+            if(currentGoods.length>0){
+                // 存在，数量+1
+                currentGoods[0].qty++;
+            }else{
+                // 不存在，添加商品
+
+                // 获取商品信息
+                // 把goods保持外观，存入cookie(只能字符串)：json字符串
+                var goods = {
+                    id:id,
+                    imgurl:`../img2/${obj.imgurl}`,
+                    name:obj.name,
+                    spec:$('.tetailRchicun1').innerHTML,
+                    price:obj.newprice,
+                    overprice:obj.overprice, 
+                    qty:1
+                }
+
+                // 当前商品添加到数组
+                goodslist.push(goods);
+            }
+				var date = new Date();
+
+				// 在当前的基础上+7天
+				date.setDate(date.getDate()+1);
+            // expires:date,,{path:'/'}
+            // document.cookie = 'goodslist=' + JSON.stringify(goodslist);
+            Cookie.set('goodslist',JSON.stringify(goodslist));
+        }
+    } 
         }
     });
-    
+    $('.all')[0].onmouseover = function(){
+        $('.all1')[0].style.display = 'block';
+    }
+    $('.all')[0].onmouseout = function(){
+        $('.all1')[0].style.display = 'none';
+    }
     //放大镜
     $.prototype.lxzoom = function(options){
 		// 这里的this指向：实例（jquery对象）
@@ -155,5 +235,7 @@ jQuery($=>{
     // 链式调用的关键
     return this;        
     }
+    
+    
 })
 

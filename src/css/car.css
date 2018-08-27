@@ -1,0 +1,161 @@
+#box { width: 100%; height: 100%; min-width: 1377px; }
+
+#login { width: 100%; background-color: #F2F2F2; border-bottom: 1px solid #EFEFEF; }
+
+#login .container { height: 35px; }
+
+#login .login-t { overflow: hidden; }
+
+#login .login-l { width: 310px; height: 35px; line-height: 35px; }
+
+#login .login-l i { margin: 0 3px; color: #FA4A99; }
+
+#login .login-l a { color: #000; margin-right: 40px; }
+
+#login .login-l a:hover { color: #FA4A99; }
+
+#login .login-r { line-height: 35px; height: 35px; }
+
+#login .login-r span { margin-right: 30px; }
+
+#login .login-r a { margin-right: 30px; color: #000; }
+
+#login .login-r a:hover { color: #FA4A99; }
+
+#login .login-r a:nth-child(4) { margin-right: 30px; }
+
+#car { width: 100%; background-color: #fff; }
+
+#car .container { width: 1253px; height: 1113px; }
+
+#car .car1 { height: 100px; margin-bottom: 83px; }
+
+#car .car12 { width: 547px; height: 62px; padding-top: 38px; }
+
+#car .car12 li { width: 182px; float: left; }
+
+#car .car2 { height: 53px; border-bottom: 3px solid #EAEAEA; position: relative; }
+
+#car .car21 { width: 164px; height: 53px; font-size: 32px; line-height: 46px; border-bottom: 3px solid #FA4B9B; position: absolute; left: 0; top: 0; }
+
+#car .car3 { height: 70px; padding-top: 19px; box-sizing: border-box; }
+
+#car .car3 div { height: 25px; text-align: center; font-size: 16px; float: left; line-height: 25px; }
+
+#car .all { width: 23px; height: 18px; }
+
+#car .car31 { width: 150px; text-align: center; }
+
+#car .car32 { width: 353px; }
+
+#car .car33 { width: 141px; border-left: 2px solid #E5E5E5; }
+
+#car .car4 { margin: 0 20px 63px 20px; width: 1210px; border: 1px solid #EDEDED; }
+
+#car .car4 li { border-bottom: 1px dotted #eee; width: 1210px; height: 129px; padding-top: 15px; font-size: 16px; position: relative; }
+
+#car .car4 li input { width: 26px; height: 26px; margin: -10px 27px 0; }
+
+#car .car4 li img { width: 97px; height: 97px; border: 1px solid #DDDDDD; margin: 0 18px 15px 0; }
+
+#car .car4 .nick { display: inline-block; width: 291px; height: 98px; color: #666666; }
+
+#car .car4 .changgui { padding: 6px 54px 0 64px; }
+
+#car .car4 .newprice1 { position: absolute; left: 705px; top: 40px; }
+
+#car .car4 .shuliang1 { padding: 12px 57px 0 49px; }
+
+#car .car4 .total1 { padding: 6px 50px 0 50px; color: #FF69B4; }
+
+#car .car4 .clone { font-size: 16px; padding: 7px 45px 0 40px; }
+
+#car .car4 .clone:hover { color: #FF69B4; }
+
+#car .car4 .overprice { padding: 6px 54px 0 52px; }
+
+#car .car5 { margin: 0 20px 25px 20px; width: 1204px; height: 73px; line-height: 73px; border: 1px solid #E5E5E5; }
+
+#car .car5 div { line-height: 73px; font-size: 18px; float: left; }
+
+#car .car51 { width: 123px; font-weight: bold; text-align: center; }
+
+#car .car51 input { width: 26px; height: 26px; }
+
+#car .car52 { width: 353px; margin-right: 134px; }
+
+#car .car52 span { padding-right: 12px; }
+
+#car .car52 span:hover { color: #FA4B9B; }
+
+#car .car53 { width: 408px; font-weight: bold; margin-right: 60px; }
+
+#car .shuliang { font-size: 24px; color: #FA4B9B; }
+
+#car .newprice { color: #FA4B9B; }
+
+#car .car54 { width: 124px; background-color: #FA4B9B; text-align: center; font-size: 24px; color: #fff; }
+
+#bottom { background-color: #fff; margin-top: 19px; width: 100%; box-sizing: border-box; border-top: 1px solid #EBEBEB; }
+
+#bottom .container { height: 680px; }
+
+#bottom .btm1 { height: 171px; width: 1377px; padding: 29px 0 0 120px; }
+
+#bottom .btm11 { width: 106px; height: 142px; text-align: center; float: left; margin-right: 100px; }
+
+#bottom .btm111 { font-size: 18px; font-weight: bold; }
+
+#bottom .btm112 { font-size: 14px; }
+
+#bottom .btm2 { height: 210px; padding: 22px 0 0 120px; border-bottom: 1px solid #F9F9F9; border-top: 2px solid #DCDCDC; }
+
+#bottom .btm21 { width: 909px; height: 186px; border-right: 2px solid #F5F5F4; }
+
+#bottom .btm211 { width: 165px; height: 186px; }
+
+#bottom .btm211 h3 { font-size: 20px; font-weight: bold; line-height: 44px; }
+
+#bottom .btm211 a { font-size: 14px; line-height: 34px; color: #000; }
+
+#bottom .btm215 { width: 247px; }
+
+#bottom .btm22 { width: 318px; height: 186px; padding-left: 22px; }
+
+#bottom .btm22 h3 { font-size: 20px; font-weight: bold; line-height: 44px; margin-bottom: 9px; }
+
+#bottom .btm22 .btm223 { width: 78px; height: 131px; margin-right: 8px; }
+
+#bottom .btm22 .btm221 { display: block; }
+
+#bottom .btm3 { width: 1377px; height: 66px; text-align: center; line-height: 66px; }
+
+#bottom .btm3 a { padding: 0 19px; border-right: 2px solid #AAAAAA; color: #000; }
+
+#bottom .btm3 a:last-child { border-right: 0; }
+
+#bottom .btm3 a:hover { color: #FB3893; }
+
+#bottom .btm4 { width: 1377px; height: 143px; text-align: center; }
+
+#bottom .btm41 { margin-bottom: 5px; }
+
+#bottom .btm42 { line-height: 28px; }
+
+#bottom .btm5 { width: 1377px; height: 52px; text-align: center; }
+
+#bottom .btm5 a { margin-right: 33px; }
+
+.fixed { position: fixed; left: 135px; bottom: 110px; width: 100px; height: 248px; }
+
+.fixed2 { position: fixed; right: 150px; bottom: 110px; display: none; border: 1px solid #ddd; border-radius: 5px; width: 54px; height: 196px; }
+
+.fixed2 li { padding: 7px 0 2px 0; font-size: 12px; text-align: center; color: #333; border-bottom: 1px solid #e6e6e6; position: relative; }
+
+.fixed2 .mycar:hover { color: #FC3A94; }
+
+.fixed2 i { display: block; margin: 0 auto; width: 28px; height: 28px; line-height: 28px; font-size: 22px; color: #fa4b9b; margin-bottom: 3px; }
+
+.fixed2 .gotop { width: 54px; height: 28px; background-color: #fa4b9b; border-radius: 0 0 5px 5px; }
+
+.fixed2 .gotop i { color: #fff; position: absolute; left: 14px; bottom: 0; }

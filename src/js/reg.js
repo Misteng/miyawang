@@ -7,16 +7,17 @@
 
 			let isok = false;
 
+			// 获取用户名/密码
+			
 			// 注册
 			btnReg.onclick = function(){
 				if(!isok){
 					return false;
 				}
                 
-				// 获取用户名/密码
+				
 				let _username = username.value;
 				var _password = password.value;
-
 				let xhr = new XMLHttpRequest();
 				xhr.onload = ()=>{
 					if(status.indexOf(xhr.status) >= 0){
@@ -40,9 +41,17 @@
 
 
 			// 验证用户名是否存在
+			let error = document.querySelector('.error');
 			username.onblur = ()=>{
-                password.value = '';
 				let _username = username.value;
+				if(!/^1[3-9]\d{9}$/.test(_username)){
+					error.innerText = '';
+                    error.innerText = '请输入11位的手机号';
+                    return false;
+				}
+				
+                password.value = '';
+				// let _username = username.value;
 
 				let xhr = new XMLHttpRequest();
 				
@@ -67,5 +76,13 @@
 				xhr.open('get','../api/check_username.php?username='+_username,true);
 				xhr.send();
 
+			}
+			let error1 = document.querySelector('.error1');
+			password.onblur = ()=>{
+				if(!/^\S{6,20}$/.test(password)){
+					error.innerText = '';
+					error.innerText = '密码不能为空';
+					return false;
+				}
 			}
         })()

@@ -206,7 +206,7 @@
 
 .fixed { position: fixed; left: 135px; bottom: 110px; width: 100px; height: 248px; }
 
-.fixed2 { position: fixed; right: 150px; bottom: 110px; display: none; border: 1px solid #ddd; border-radius: 5px; width: 54px; height: 196px; }
+.fixed2 { position: fixed; right: 163px; bottom: 110px; display: none; border: 1px solid #ddd; border-radius: 5px; width: 54px; height: 196px; }
 
 .fixed2 li { padding: 7px 0 2px 0; font-size: 12px; text-align: center; color: #333; border-bottom: 1px solid #e6e6e6; position: relative; }
 

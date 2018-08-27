@@ -190,7 +190,7 @@ var Cookie = {
 	 */
 	remove:function(name){
 		var now = new Date();
-		now.setDate(now.getDate()-1);
+		now.setDate(now.getDate()-7);
 
 		// document.cookie = name + '=x;expires='+now.toUTCString()
 		this.set(name,'x',{expires:now});

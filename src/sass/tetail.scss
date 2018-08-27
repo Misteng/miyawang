@@ -159,12 +159,13 @@
     }
     .tetailRshuliang{height: 38px;padding-left:20px;margin-bottom:22px;line-height:38px;
         span{font-size: 20px;padding-right:40px;}
-        .zijia{
-            display: inline-block;width: 78px;height: 30px;border: 1px solid #b3b3b3;color: #666;font-size: 12px;
-            span,em{text-align: center;line-height: 30px;}
-            em{text-align: center;line-height: 28px; width: 28px;}
-            span{}
-        }
+        // .zijia{
+        //     display: inline-block;width: 78px;height: 30px;border: 1px solid #b3b3b3;color: #666;font-size: 12px;
+        //     span,em{text-align: center;line-height: 30px;}
+        //     em{text-align: center;line-height: 28px; width: 28px;}
+        //     // span{}
+        // }
+        input{border:1px solid #ccc;font-size: 16px;width: 50px;text-align: center;}
     }
     .tetailRpingfen{
         height: 24px;padding-left:20px;margin-bottom:25px;line-height:24px;
@@ -187,6 +188,29 @@
     }
 
     .tetail3{width: 1375px;height: 25px;}
+
+    .tetail4{
+        width: 1375px;height: 339px;margin-top:23px;
+        li{
+            width: 196px;margin-left:10px;float:left;
+            img{border:2px solid #ccc;width: 192px;height: 193px;}
+            p{font-size: 14px;line-height:22px;}
+            span{font-size: 12px;color:#F450A2;}
+        }
+    }
+    .tetail5{width: 1375px;height: 14818px;}
+    .tetail5L{width: 275px;}
+    .tetail5L1{
+        width: 275px;height: 177px;border:1px solid #ccc;box-sizing:border-box;
+        h3{width: 248px;padding-left:22px;line-height: 48px;font-size: 24px;color:#F450A2;border-bottom:2px solid #F5F5F5;margin-bottom:10px;}
+        span{font-size: 18px;padding:40px 20px;}
+    }
+    .tetail5R{width: 1078px;}
+    .tetail5R1{
+        height: 57px;background-color:#FF3B93;line-height:57px;
+        span{padding:18px 26px;font-size: 18px;color:#fff;}
+        span:first-child{background-color:#EC0871;}
+    }
 }
 
 
@@ -230,7 +254,7 @@
 
 .fixed{position:fixed;left:135px;bottom:110px;width: 100px;height: 248px;}
 .fixed2{
-    position:fixed;right:150px;bottom:110px;display: none;
+    position:fixed;right:163px;bottom:110px;display: none;
     border:1px solid #ddd;
     border-radius:5px;
     width: 54px;height: 196px;

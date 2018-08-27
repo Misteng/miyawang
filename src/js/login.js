@@ -16,7 +16,7 @@
         let xhr = new XMLHttpRequest();
 
         xhr.onload = ()=>{
-            if(status.indexOf(xhr.status) >= 0){
+            if(status.indexOf(  ) >= 0){
                 
                 if(xhr.responseText == 'yes'){
                     location.href = "../index.html";
